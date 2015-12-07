@@ -19,8 +19,8 @@ import java.util.List;
 public class SliderPagerAdapter extends FragmentStatePagerAdapter {
 
     public static final String KEY_POSITION = "key_pos";
-    Context mContext = null;
-    List<SliderItem> mItems = new ArrayList<SliderItem>();
+    static Context mContext = null;
+    static List<SliderItem> mItems = new ArrayList<SliderItem>();
 
     public SliderPagerAdapter(Context context, FragmentManager fm) {
         super(fm);
@@ -48,7 +48,8 @@ public class SliderPagerAdapter extends FragmentStatePagerAdapter {
         return mItems.size();
     }
 
-    class PageFragment extends Fragment {
+    public static class PageFragment extends Fragment {
+        public PageFragment(){}
         @Override
         public View onCreateView(LayoutInflater inflater,
                                  @Nullable ViewGroup container,
