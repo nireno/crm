@@ -7,7 +7,7 @@ android {
     buildToolsVersion "21.1.2"
     defaultConfig {
         applicationId "com.odoo.crm"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 22
         versionCode 7
         versionName "1.0.7"
